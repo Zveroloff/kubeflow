@@ -1,0 +1,107 @@
+# kubeflow packages
+kfp
+kfp-server-api
+kfserving==0.5.1
+
+# common packages
+# bokeh==2.3.2
+cloudpickle==1.6.0
+dill==0.3.4
+ipympl==0.9.2
+ipywidgets==7.7.3
+jupyterlab-git==0.41.0
+jupyterlab-dash
+matplotlib==3.4.2
+scikit-image==0.18.1
+scipy==1.7.0
+seaborn>=0.11.1
+xgboost>=1.4.2
+
+# tensorflow packages
+keras==2.4.3
+
+# Analysis
+shap>=0.38.0
+interpret>=0.2.7
+umap-learn>=0.5.2
+pandas-profiling>=3.1.0
+explainerdashboard>=0.3.8  # For dashboard method
+autoviz>=0.1.36  # For EDA method
+fairlearn==0.7.0  # For check_fairness method
+deepchecks>=0.9.2  # For deep_check method
+
+# Base
+ipython>=5.5.0
+tqdm>=4.62.0  # required by pycaret.internal.display
+numpy>=1.21, <1.25  # Can't >=1.25 because of sktime/numba
+pandas>=1.3.0, <1.6.0  # Can't >=1.6 because of sktime
+jinja2>=1.2  # Required by pycaret.internal.utils --> pandas.io.formats.style
+scipy<2.0.0  # Can't >=2.0.0 due to sktime
+joblib>=1.2.0  # joblib<1.2.0 is vulnerable to Arbitrary Code Execution (https://github.com/advisories/GHSA-6hrg-qmvc-2xh8)
+scikit-learn>=1.0
+pyod>=0.9.8
+imbalanced-learn>=0.8.1
+category-encoders>=2.4.0
+lightgbm>=3.0.0
+numba>=0.55.0
+requests>=2.27.1  # Required by pycaret.datasets
+psutil>=5.9.0
+markupsafe>=2.0.1  # Fixes Google Colab issue
+importlib_metadata>=4.12.0
+nbformat>=4.2.0
+pickle5; python_version < "3.8"
+deprecation>=2.1.0
+xxhash  # for faster hashing
+
+# Plotting
+scikit-plot>=0.3.7
+yellowbrick>=1.4
+plotly>=5.0.0
+kaleido>=0.2.1
+schemdraw>=0.14
+plotly-resampler>=0.7.2.2
+
+# Models
+catboost>=0.23.2
+kmodes>=0.11.1
+mlxtend>=0.19.0
+statsforecast>=0.5.5
+scikit-learn-intelex>=2023.0.1; platform_machine == 'x86_64' or platform_machine == 'AMD64'
+
+# Tuners
+tune-sklearn>=0.2.1; platform_system != 'Windows'
+ray[tune]>=1.0.0; platform_system != 'Windows'
+hyperopt>=0.2.7
+optuna>=3.0.0
+scikit-optimize>=0.9.0
+pycaret==3.0.0rc9
+
+# MLOps
+mlflow>=1.24.0,<2.0.0
+gradio>=2.8.10
+boto3>=1.24.56  # For deploy_model method
+fastapi>=0.75.0  # For web api
+uvicorn>=0.17.6  # For web api
+m2cgen>=0.9.0  # For model conversion
+evidently>=0.1.45.dev0  # for drift reporting
+
+# NLP
+nltk>=3.7
+pyLDAvis>=3.3.1
+gensim>=4.1.2
+spacy>=3.2.3
+wordcloud>=1.8.1
+textblob>=0.17.1
+
+# Time-series
+statsmodels>=0.12.1
+sktime>=0.15.0
+tbats>=1.1.0
+pmdarima>=1.8.0,!=1.8.1,<3.0.0 # Matches sktime
+
+# Parallel
+fugue>=0.8.0
+flask>=2.0.3
+
+# Extras
+RISE

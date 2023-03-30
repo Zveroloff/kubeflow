@@ -62,7 +62,8 @@ RUN python3 -m pip install -r /tmp/requirements.txt --quiet --no-cache-dir \
  && jupyter lab --generate-config \
  && rm -rf ${HOME}/.cache/yarn \
  && chown -R ${NB_USER}:users ${CONDA_DIR} \
- && chown -R ${NB_USER}:users ${HOME}
+ && chown -R ${NB_USER}:users ${HOME} \
+ && jupyter contrib nbextension install --user
 
 # s6 - copy scripts
 COPY --chown=jovyan:users s6/ /etc

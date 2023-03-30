@@ -1,0 +1,42 @@
+# kubeflow packages
+kfp==1.6.3
+kfp-server-api==1.6.0
+kfserving==0.5.1
+
+# common packages
+bokeh==2.3.2
+cloudpickle==1.6.0
+dill==0.3.4
+ipympl==0.7.0
+ipywidgets==7.6.3
+jupyterlab-git==0.30.1
+seaborn==0.11.1
+
+# common exra
+numpy
+
+# tensorflow packages
+# keras==2.4.3
+
+# upgrades
+scipy
+scikit-image
+scikit-learn
+pandas
+pandas-profiling
+matplotlib
+xgboost
+
+# extra
+mljar-supervised
+pathlib
+requests
+beautifulsoup4
+autoviz
+aiohttp
+aiofiles
+plotly
+plotly-resampler
+dash
+RISE
+openpyxl

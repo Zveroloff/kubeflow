@@ -2,3 +2,4 @@
 # extras
 opencv-contrib-python-headless
 pillow
+av

@@ -1,8 +1,8 @@
-ENV NB_UID 1000
-
 # Use the respective Makefile to pass the appropriate BASE_IMG and build the image correctly
 ARG BASE_IMG=<jupyter-pytorch-cuda-full>
 FROM $BASE_IMG
+
+ENV NB_UID 1000
 
 # install - ffmpeg linux packages
 USER root

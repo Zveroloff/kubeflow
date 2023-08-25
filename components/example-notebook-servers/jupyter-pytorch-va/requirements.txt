@@ -3,3 +3,5 @@
 opencv-contrib-python-headless
 pillow
 av
+impyla
+thrift_sasl
